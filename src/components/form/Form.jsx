@@ -41,7 +41,7 @@ const Form = ({ addBook }) => {
           <span className="text-slate-100">Price:</span>
           <input
             required
-            type="text"
+            type="number"
             placeholder="Price of the book..."
             value={price}
             onChange={(e) => setPrice(e.target.value)}
