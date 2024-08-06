@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 const Form = ({ addBook }) => {
   const [title, setTitle] = useState("");
@@ -9,6 +10,7 @@ const Form = ({ addBook }) => {
   const createBook = (e) => {
     e.preventDefault();
     addBook({
+      id: uuidv4(),
       title,
       price,
       url,
@@ -51,7 +53,6 @@ const Form = ({ addBook }) => {
         <div className="flex items-center justify-start gap-4 bg-slate-800 p-4 rounded-md shadow-sm shadow-yellow-500">
           <span className="text-slate-100 text-nowrap">IMG url:</span>
           <input
-            required
             type="text"
             value={url}
             onChange={(e) => setUrl(e.target.value)}

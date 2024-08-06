@@ -1,0 +1,12 @@
+.books {
+  &::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: #03045e;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0.2rem;
+    background-color: #283618;
+  }
+}

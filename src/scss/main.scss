@@ -1,6 +1,6 @@
-@use "global";
-@use "util";
-@use "sections";
+@use "./global";
+@use "./util";
+@use "./sections";
 
 @tailwind base;
 @tailwind components;

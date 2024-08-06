@@ -30,7 +30,7 @@ const Todo = () => {
   return (
     <section
       ref={ref}
-      className="fixed inset-0 flex items-center justify-start flex-col overflow-y-auto pt-20 scroll-smooth"
+      className="books fixed inset-0 flex items-center justify-start flex-col overflow-y-auto pt-20 scroll-smooth"
     >
       <Header />
       <Form addBook={addBook} />

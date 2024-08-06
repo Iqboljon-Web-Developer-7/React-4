@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 import bookImg from "../../assets/images/dummy.jpg";
 
-let idCounter = 0;
 const BooksContainer = ({ data }) => {
   return (
     <section className="mt-10 text-slate-100 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 gap-4">
@@ -11,12 +10,9 @@ const BooksContainer = ({ data }) => {
       ) : (
         data?.map((item) => {
           return (
-            <div
-              className="p-2 bg-slate-600 text-sm md:text-xl"
-              key={idCounter++}
-            >
+            <div className="p-2 bg-slate-600 text-sm md:text-xl" key={item.id}>
               <img
-                src={item.url.length < 10 ? bookImg : item}
+                src={item.url.length < 14 ? bookImg : item}
                 alt="If your are seeing this text this means there is no img:)"
                 className="max-h-72"
               />
